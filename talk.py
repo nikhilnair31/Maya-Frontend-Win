@@ -22,7 +22,7 @@ else:
 os.environ["PYGAME_HIDE_SUPPORT_PROMPT"] = "1"
 load_dotenv(BASE_DIR / ".env")
 
-MAYA_SERVER_IP = os.getenv("MAYA_SERVER_IP", "127.0.0.1")
+MAYA_SERVER_IP = os.getenv("MAYA_SERVER_IP", "100.124.34.102")
 API_URL = f"http://{MAYA_SERVER_IP}:8000/process"
 TEMP_DIR = BASE_DIR / "temp_audio"
 TEMP_AUDIO = TEMP_DIR / "input.wav"
